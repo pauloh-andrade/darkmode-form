@@ -1,3 +1,5 @@
+@import url('./theme.css');
+
 #form-container {
   display: flex;
   flex-direction: column;
@@ -9,6 +11,7 @@
 .medium-label {
   width: 25rem;
   height: 6rem;
+  padding: 1rem;
   background-color: var(--dark-secundary-background);
   border-radius: 1.5rem;
 }
@@ -16,21 +19,48 @@
 .large-label {
   width: 50rem;
   height: 6rem;
+  padding: 1rem;
   background-color: var(--dark-secundary-background);
   border-radius: 1.5rem;
 }
 
 .text-field {
   width: 100%;
-  height: 100%;
-  background-color: transparent;
+  height: 60%;
+  background-color: brown;
   border: 0;
   outline: none;
+}
+
+.large-label > label {
+  width: auto;
+  height: 40%;
+}
+
+.medium-label > label {
+  width: auto;
+  height: 40%;
 }
 
 .action-buttons {
   width: 50rem;
   height: 6rem;
+  margin-top: 1rem;
+}
+
+.btn-create {
+  width: 100%;
+  height: 6rem;
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+  color: var(--darkmode-font);
+  font-family: 'Poppins Medium';
+  font-size: 1.65rem;
+}
+
+.btn-create:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 50px #1a7cd166;
 }
 
 .form-gap {
