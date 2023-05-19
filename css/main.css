@@ -1,4 +1,5 @@
 @import url('./theme.css');
+@import url('./form.css');
 
 * {
   padding: 0;
@@ -24,11 +25,11 @@ header {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   color: var(--dark-secundary-font);
 }
 
@@ -36,6 +37,8 @@ h3 {
   flex-grow: 1;
   background-color: var(--secundary-backroud);
   padding: 3rem;
+  padding-left: 8rem;
+  gap: 1rem;
 }
 
 #background-container {
@@ -67,7 +70,7 @@ h3 {
 }
 
 .logo + p {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: bold;
   color: var(--dark-font);
 }
@@ -122,6 +125,6 @@ h3 {
 }
 
 .text {
-  font-size: 1.25rem;
+  font-size: 1.55rem;
   color: var(--dark-secundary-font);
 }

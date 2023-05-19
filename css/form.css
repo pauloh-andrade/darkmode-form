@@ -1,0 +1,38 @@
+#form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  height: auto;
+  padding-top: 2.5rem;
+}
+
+.medium-label {
+  width: 25rem;
+  height: 6rem;
+  background-color: var(--dark-secundary-background);
+  border-radius: 1.5rem;
+}
+
+.large-label {
+  width: 50rem;
+  height: 6rem;
+  background-color: var(--dark-secundary-background);
+  border-radius: 1.5rem;
+}
+
+.text-field {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.action-buttons {
+  width: 50rem;
+  height: 6rem;
+}
+
+.form-gap {
+  gap: 2rem;
+}
