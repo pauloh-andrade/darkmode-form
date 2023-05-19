@@ -1,0 +1,15 @@
+:root {
+  --primary-color: ##1d90f4;
+  --dark-background: #282a37;
+  --dark-font: #fff;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
