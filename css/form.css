@@ -8,42 +8,55 @@
   padding-top: 2.5rem;
 }
 
-.medium-label {
-  width: 25rem;
+.medium-label,
+.large-label {
+  position: relative;
   height: 6rem;
   padding: 1rem;
+  padding-left: 2rem;
   background-color: var(--dark-secundary-background);
   border-radius: 1.5rem;
+}
+
+.large-label:focus-within,
+.medium-label:focus-within {
+  outline: 2px solid var(--primary-color);
 }
 
 .large-label {
   width: 50rem;
-  height: 6rem;
-  padding: 1rem;
-  background-color: var(--dark-secundary-background);
-  border-radius: 1.5rem;
+}
+
+.medium-label {
+  width: 25rem;
 }
 
 .text-field {
-  width: 100%;
-  height: 60%;
-  background-color: brown;
+  width: 80%;
+  height: 70%;
+
+  background-color: transparent;
+  font-size: 1.75rem;
+  color: var(--darkmode-color);
   border: 0;
   outline: none;
+
+  position: absolute;
+  left: 0;
+  padding-top: 1.2rem;
+  padding-left: 2rem;
 }
 
-.large-label > label {
-  width: auto;
-  height: 40%;
-}
-
+.large-label > label,
 .medium-label > label {
+  color: var(--dark-secundary-font);
+  display: inline-block;
   width: auto;
   height: 40%;
 }
 
 .action-buttons {
-  width: 50rem;
+  width: auto;
   height: 6rem;
   margin-top: 1rem;
 }

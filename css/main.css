@@ -18,11 +18,9 @@ html {
 }
 
 header {
-  /* position: fixed; */
   width: 100%;
-  height: 8rem;
-  padding: 3rem;
-  /* background-color: #fff; */
+  height: 5rem;
+  padding: 4rem;
   z-index: 10;
 }
 
@@ -33,6 +31,10 @@ h1 {
 h3 {
   font-size: 1.85rem;
   color: var(--dark-secundary-font);
+}
+
+a {
+  color: var(--primary-color);
 }
 
 #section-main {
@@ -65,10 +67,10 @@ h3 {
 .logo {
   width: 4rem;
   height: 4rem;
-  border-radius: 2rem;
+  /*  border-radius: 2rem; */
   margin-right: 2rem;
-  /* background: linear-gradient(65deg, #1a7cd1 60%, #178ef6); */
-  background-color: #1a7cd1;
+  /* background: linear-gradient(65deg, #1a7cd1 60%, #3e97e5);  */
+  /* background-color: #1a7cd1; */
 }
 
 .logo + p {
