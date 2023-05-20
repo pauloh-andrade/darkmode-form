@@ -1,0 +1,81 @@
+@import url('./theme.css');
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  height: auto;
+  padding-top: 2.5rem;
+}
+
+.medium-label,
+.large-label {
+  position: relative;
+  height: 6rem;
+  padding: 1rem;
+  padding-left: 2rem;
+  background-color: var(--dark-secundary-background);
+  border-radius: 1.5rem;
+}
+
+.large-label:focus-within,
+.medium-label:focus-within {
+  outline: 2px solid var(--primary-color);
+}
+
+.large-label {
+  width: 50rem;
+}
+
+.medium-label {
+  width: 25rem;
+}
+
+.text-field {
+  width: 80%;
+  height: 70%;
+
+  background-color: transparent;
+  font-size: 1.75rem;
+  color: var(--darkmode-color);
+  border: 0;
+  outline: none;
+
+  position: absolute;
+  left: 0;
+  padding-top: 1.2rem;
+  padding-left: 2rem;
+}
+
+.large-label > label,
+.medium-label > label {
+  color: var(--dark-secundary-font);
+  display: inline-block;
+  width: auto;
+  height: 40%;
+}
+
+.action-buttons {
+  width: auto;
+  height: 6rem;
+  margin-top: 1rem;
+}
+
+.btn-create {
+  width: 100%;
+  height: 6rem;
+  border-radius: 3rem;
+  background-color: var(--primary-color);
+  color: var(--darkmode-font);
+  font-family: 'Poppins Medium';
+  font-size: 1.65rem;
+}
+
+.btn-create:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 50px #1a7cd166;
+}
+
+.form-gap {
+  gap: 2rem;
+}

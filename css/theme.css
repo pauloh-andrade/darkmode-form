@@ -1,7 +1,9 @@
 :root {
-  --primary-color: ##1d90f4;
+  --primary-color: #1d90f4;
   --dark-background: #282a37;
+  --dark-secundary-background: #323645;
   --dark-font: #fff;
+  --dark-secundary-font: #9fa9b7;
 }
 
 @font-face {
@@ -12,4 +14,9 @@
 @font-face {
   font-family: 'Poppins Medium';
   src: url('../fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf') format('truetype');
 }
