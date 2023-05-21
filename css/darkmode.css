@@ -6,7 +6,7 @@
   height: 3rem;
   border-radius: 0.8rem;
   background-color: transparent;
-  border: 2px solid #e0e0e0;
+  border: 2px solid var(--primary-border);
   color: var(--primary-font);
   font-family: 'Poppins Medium';
   font-size: 1.65rem;
