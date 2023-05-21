@@ -8,11 +8,11 @@ const validate = (e) => {
   const inputContainer = document.querySelector(`#${e.target.name}-row .error-label`)
 
   if (value.length < min) {
-    inputContainer.innerHTML = `*O campo ${e.target.name} deve conter no minimo 5`
+    inputContainer.innerHTML = `*${e.target.name} deve conter no minimo 5 caracteres`
   } else if (max && value.length > max) {
     inputContainer.innerHTML = '*A senha deve conter no maximo 8 caracteres'
   } else if (isEmail && !value.includes('@')) {
-    inputContainer.innerHTML = 'O email deve conter @'
+    inputContainer.innerHTML = '*O email deve conter @'
   } else if (value.length < 1) {
     inputContainer.innerHTML = `O campo ${e.target.name} é obrigatório`
   } else if (isConfirmPass) {
@@ -28,10 +28,13 @@ const validate = (e) => {
 
 const alertError = (e) => {
   const errorLabels = [...document.querySelectorAll('.error-label')]
-  errorLabels.map((label) => label.innerHTML)
-  //   console.log(errorLabels)
-  //   const errors = errorLabels.map((label) => label.innerHTML)
-  //   console.log(errors)
+
+  let errors = []
+  errorLabels.forEach((label) => {
+    label.innerHTML && errors.push(label.innerHTML)
+  })
+
+  if (errors.length > 0) alert('Erros:\n' + errors.join('\n'))
 }
 document.getElementById('btn-new-account').addEventListener('click', alertError)
 document.querySelectorAll('.text-field').forEach((input) => {
