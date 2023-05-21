@@ -26,7 +26,7 @@ const validate = (e) => {
   }
 }
 
-const alertError = (e) => {
+const createNewUser = (e) => {
   const errorLabels = [...document.querySelectorAll('.error-label')]
 
   let errors = []
@@ -34,9 +34,14 @@ const alertError = (e) => {
     label.innerHTML && errors.push(label.innerHTML)
   })
 
-  if (errors.length > 0) alert('Erros:\n' + errors.join('\n'))
+  if (errors.length > 0) {
+    alert('Erros:\n' + errors.join('\n'))
+    e.preventDefault()
+  } else {
+    alert('Usuário cadastrado com sucesso')
+  }
 }
-document.getElementById('btn-new-account').addEventListener('click', alertError)
+document.getElementById('btn-new-account').addEventListener('click', createNewUser)
 document.querySelectorAll('.text-field').forEach((input) => {
   input.addEventListener('input', validate)
 })
