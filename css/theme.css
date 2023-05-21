@@ -1,9 +1,10 @@
 :root {
   --primary-color: #1d90f4;
-  --dark-background: #282a37;
-  --dark-secundary-background: #323645;
-  --dark-font: #fff;
-  --dark-secundary-font: #9fa9b7;
+  --primary-background: #282a37;
+  --primary-background-grad: #282a37a5;
+  --secundary-background: #323645;
+  --primary-font: #fff;
+  --secundary-font: #9fa9b7;
 }
 
 @font-face {
