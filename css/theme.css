@@ -1,9 +1,21 @@
 :root {
   --primary-color: #1d90f4;
-  --dark-background: #282a37;
-  --dark-secundary-background: #323645;
-  --dark-font: #fff;
-  --dark-secundary-font: #9fa9b7;
+  --primary-background: #282a37;
+  --primary-background-grad: #282a37a5;
+  --secundary-background: #323645;
+  --primary-font: #fff;
+  --secundary-font: #9fa9b7;
+  --primary-border: #e0e0e0;
+}
+
+:root.light {
+  --primary-color: #1d90f4;
+  --primary-background: #fff;
+  --primary-background-grad: #ffffffcc;
+  --secundary-background: #f0f0f0;
+  --primary-font: #3d3d3d;
+  --secundary-font: #737c88;
+  --primary-border: #737c88;
 }
 
 @font-face {

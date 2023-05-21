@@ -1,5 +1,6 @@
 @import url('./theme.css');
 @import url('./form.css');
+@import url('./darkmode.css');
 
 * {
   padding: 0;
@@ -14,7 +15,7 @@ html {
   font-size: 62.5%;
   overflow: hidden;
   font-family: 'Poppins';
-  color: var(--dark-font);
+  color: var(--primary-font);
 }
 
 header {
@@ -30,7 +31,7 @@ h1 {
 
 h3 {
   font-size: 1.85rem;
-  color: var(--dark-secundary-font);
+  color: var(--secundary-font);
 }
 
 a {
@@ -75,13 +76,12 @@ a {
   width: 5vw;
   right: 4vw;
   bottom: 3vh;
-  /* align-self: flex-end; */
 }
 
 .logo + p {
   font-size: 2rem;
   font-weight: bold;
-  color: var(--dark-font);
+  color: var(--primary-font);
 }
 
 .background {
@@ -89,7 +89,7 @@ a {
   height: 100%;
   content: '';
   position: absolute;
-  background: linear-gradient(65deg, #282a37 60%, #282a37a5);
+  background: linear-gradient(65deg, var(--primary-background) 60%, var(--primary-background-grad));
 }
 
 .background .trail {
@@ -135,5 +135,5 @@ a {
 
 .text {
   font-size: 1.55rem;
-  color: var(--dark-secundary-font);
+  color: var(--secundary-font);
 }

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="./cp3.js" defer></script>
+    <script src="./js/cp3.js" defer></script>
+    <script src="./js/darkmode.js" defer></script>
     <link rel="icon" href="./img/eco-logo.ico" />
     <link rel="stylesheet" href="./css/main.css" />
 
@@ -18,43 +19,60 @@
         <img class="footer-logo" src="./img/footer-logo.png" alt="trail logo marca" />
       </div>
       <div id="main-container" class="center">
-        <header class="limit-content flex">
+        <header class="limit-content flex center space-b">
           <div class="flex center">
             <img class="logo" src="./img/eco-logo.png" alt="Eco trail logo marca" />
             <p>Eco trail.</p>
           </div>
+          <button id="change-mode-button"><img src="./img/mode-light.svg" /></button>
         </header>
         <main id="section-main" class="limit-content flex column justify-center">
           <h3>AVENTURE-SE CONOSCO</h5>
-          <h1>Criar uma nova conta.</h1>
-          <p class="text">Já é um membro? <a href="#">Faca Log in </a></p>
-          <div id="form-container" class="form-gap">
-            <div class="flex form-gap">
+          <h1>Crie uma nova conta.</h1>
+          <p class="text">Já é um membro? <a href="#">Faça Log in </a></p>
+          <form id="form-container" class="form-gap">
+            <div class="flex input-gap">
+              <div id="nome-row">
+                <div class="error-label"></div>
                 <div class="medium-label">
-                    <label>Primeiro nome*</label>
-                    <input class="text-field"  type="text" maxlength="18"/>
+                  <label>Primeiro nome*</label>
+                  <input class="text-field"  name="nome" type="text" maxlength="18"/>
                 </div>
+              </div>
+              <div id="sobrenome-row">
+                <div class="error-label"></div>
                 <div class="medium-label">
-                    <label>Sobrenome*</label>
-                    <input class="text-field"  type="text" maxlength="18"/>
+                  <label>Sobrenome*</label>
+                  <input class="text-field"  name="sobrenome" type="text" maxlength="18"/>
                 </div>
+              </div>
             </div>
-            <div class="large-label">
+            <div id="email-row">
+              <div class="error-label"></div>
+              <div class="large-label">
                 <label>E-mail*</label>
-                <input class="text-field"  type="text" maxlength="40"/>
+                <input id="input-email" class="text-field" name="email"  type="text" maxlength="40"/>
             </div>
-            <div class="large-label">
+            </div>
+            <div id="senha-row">
+              <div class="error-label"></div>
+              <div class="large-label">
                 <label>Senha*</label>
-                <input class="text-field"  type="password" maxlength="40"/>
+                <input id='input-pass' class="text-field" name="senha" type="password" maxlength="40"/>
             </div>
-            <div class="large-label">
+            </div>
+            <div id="confirmar-row">
+              <div class="error-label"></div>
+              <div class="large-label">
                 <label>Confirme a senha*</label>
-                <input class="text-field" type="password" maxlength="40"/>
+                <input id='input-confirm' class="text-field" name="confirmar" type="password" maxlength="40"/>
             </div>
+            </div>
+
             <div class="action-buttons">
-                <button class="btn-create">Criar conta</button>
+                <button  id="btn-new-account" class="btn-create">Criar conta</button>
             </div>
-          </div>
+          </form>
         </main>
       </div>
     </div>

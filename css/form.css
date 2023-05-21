@@ -1,5 +1,3 @@
-@import url('./theme.css');
-
 #form-container {
   display: flex;
   flex-direction: column;
@@ -8,13 +6,19 @@
   padding-top: 2.5rem;
 }
 
+.error-label {
+  width: 100%;
+  height: 2rem;
+  color: #c03a3a;
+}
+
 .medium-label,
 .large-label {
   position: relative;
   height: 6rem;
   padding: 1rem;
-  padding-left: 2rem;
-  background-color: var(--dark-secundary-background);
+
+  background-color: var(--secundary-background);
   border-radius: 1.5rem;
 }
 
@@ -28,7 +32,7 @@
 }
 
 .medium-label {
-  width: 25rem;
+  width: 24.2rem;
 }
 
 .text-field {
@@ -37,7 +41,7 @@
 
   background-color: transparent;
   font-size: 1.75rem;
-  color: var(--darkmode-color);
+  color: var(--primary-font);
   border: 0;
   outline: none;
 
@@ -49,7 +53,7 @@
 
 .large-label > label,
 .medium-label > label {
-  color: var(--dark-secundary-font);
+  color: var(--secundary-font);
   display: inline-block;
   width: auto;
   height: 40%;
@@ -66,7 +70,7 @@
   height: 6rem;
   border-radius: 3rem;
   background-color: var(--primary-color);
-  color: var(--darkmode-font);
+  color: #fff;
   font-family: 'Poppins Medium';
   font-size: 1.65rem;
 }
@@ -77,5 +81,9 @@
 }
 
 .form-gap {
-  gap: 2rem;
+  gap: 0.6rem;
+}
+
+.input-gap {
+  gap: 1.5rem;
 }

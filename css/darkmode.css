@@ -1,0 +1,28 @@
+#change-mode-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 0.8rem;
+  background-color: transparent;
+  border: 2px solid var(--primary-border);
+  color: var(--primary-font);
+  font-family: 'Poppins Medium';
+  font-size: 1.65rem;
+}
+
+#change-mode-button:hover {
+  cursor: pointer;
+  border: 0;
+  background-color: var(--primary-color);
+  box-shadow: 0 10px 50px #1a7cd166;
+}
+
+#change-mode-button:hover > img {
+  filter: brightness(200%);
+}
+
+#change-mode-button img {
+  width: 1.6rem;
+}
