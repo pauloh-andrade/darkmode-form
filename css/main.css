@@ -1,5 +1,6 @@
 @import url('./theme.css');
 @import url('./form.css');
+@import url('./darkmode.css');
 
 * {
   padding: 0;
@@ -75,7 +76,6 @@ a {
   width: 5vw;
   right: 4vw;
   bottom: 3vh;
-  /* align-self: flex-end; */
 }
 
 .logo + p {
