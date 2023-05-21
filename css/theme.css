@@ -8,6 +8,16 @@
   --primary-border: #e0e0e0;
 }
 
+:root.light {
+  --primary-color: #1d90f4;
+  --primary-background: #fff;
+  --primary-background-grad: #ffffffcc;
+  --secundary-background: #f0f0f0;
+  --primary-font: #3d3d3d;
+  --secundary-font: #737c88;
+  --primary-border: #737c88;
+}
+
 @font-face {
   font-family: 'Poppins';
   src: url('../fonts/Poppins/Poppins-Regular.ttf') format('truetype');
